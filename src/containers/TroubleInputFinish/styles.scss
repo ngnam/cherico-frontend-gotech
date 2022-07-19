@@ -1,0 +1,46 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+
+  .image {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .image-container {
+      @include image-container;
+
+      padding-bottom: 75%;
+
+      > img,
+      > .img {
+        @include image;
+      }
+    }
+  }
+
+  .main-action {
+    padding: 6px;
+
+    > button {
+      padding: 12px 21px;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 19px;
+      background: #575757;
+    }
+
+    > button.outline {
+      padding: 11px 27px;
+      background: #fff;
+    }
+
+    .action-link {
+      padding: 8px 0;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 19px;
+      color: #575757;
+    }
+  }
+}

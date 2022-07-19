@@ -1,0 +1,56 @@
+{
+    "develop": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cherico-frontend-develop-151354-authRole",
+            "UnauthRoleArn": "arn:aws:iam::742286727686:role/amplify-cherico-frontend-develop-151354-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::742286727686:role/amplify-cherico-frontend-develop-151354-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-cherico-frontend-develop-151354-deployment",
+            "UnauthRoleName": "amplify-cherico-frontend-develop-151354-unauthRole",
+            "StackName": "amplify-cherico-frontend-develop-151354",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:742286727686:stack/amplify-cherico-frontend-develop-151354/9d53f560-8529-11ea-bf4e-0a571b116cbe",
+            "AmplifyAppId": "d2ohat2x6ozh70"
+        },
+        "categories": {
+            "auth": {
+                "chericofrontende2d19be1": {}
+            }
+        }
+    },
+    "production": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cherico-frontend-production-155101-authRole",
+            "UnauthRoleArn": "arn:aws:iam::157461467082:role/amplify-cherico-frontend-production-155101-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::157461467082:role/amplify-cherico-frontend-production-155101-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-cherico-frontend-production-155101-deployment",
+            "UnauthRoleName": "amplify-cherico-frontend-production-155101-unauthRole",
+            "StackName": "amplify-cherico-frontend-production-155101",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:157461467082:stack/amplify-cherico-frontend-production-155101/d805ec30-e443-11ea-ac1e-06d1721e128e",
+            "AmplifyAppId": "dpoj80m5ddah8"
+        },
+        "categories": {
+            "auth": {
+                "chericofrontend07a17c50": {}
+            }
+        }
+    },
+    "staging": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cherico-frontend-staging-113308-authRole",
+            "UnauthRoleArn": "arn:aws:iam::828827145723:role/amplify-cherico-frontend-staging-113308-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::828827145723:role/amplify-cherico-frontend-staging-113308-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-cherico-frontend-staging-113308-deployment",
+            "UnauthRoleName": "amplify-cherico-frontend-staging-113308-unauthRole",
+            "StackName": "amplify-cherico-frontend-staging-113308",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:828827145723:stack/amplify-cherico-frontend-staging-113308/f8c6e450-f30d-11ea-8053-0e7aab70c3aa",
+            "AmplifyAppId": "d1iy4ottjh0r1y"
+        },
+        "categories": {
+            "auth": {
+                "chericofrontend07a17c50": {}
+            }
+        }
+    }
+}

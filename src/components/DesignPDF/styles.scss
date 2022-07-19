@@ -1,0 +1,102 @@
+:local(.class) {
+  .title-header{
+    margin-top: 52px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #575757;
+  }
+
+  .file-sub-content{
+    padding: 10px 16px;
+    position: relative;
+    border: 1px solid #C2C2C2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    img{
+      height: 30px;
+    }
+    span{
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+      background: #0072FF;
+      border-radius: 18px;
+      padding: 8px 16px;
+      position: absolute;
+      right: 22px;
+    }
+  }
+  .file-sub-control{
+    text-align: center;
+    margin-top: 16px;
+    .btn-remove{
+      display: inline-block;
+      margin-right: 8px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      color: #7B7B7B;
+      border: 1px solid #7B7B7B;
+      box-sizing: border-box;
+      border-radius: 18px;
+      padding: 8px 16px;
+    }
+    .btn-add{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+      background: #FF8C00;
+      border-radius: 18px;
+      padding: 8px 16px;
+    }
+  }
+
+  .sub-content-1-control{
+    font-size: 0;
+    margin-top: 16px;
+    .control-left{
+      display: inline-block;
+      width: calc(100% - 75px);
+      vertical-align: top;
+      .btn-remove{
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #7B7B7B;
+        padding: 8px 16px;
+        border: 1px solid #7B7B7B;
+        border-radius: 18px;
+        display: inline-block;
+        &.m-r{
+          margin-right: 8px;
+        }
+      }
+      .btn-add{
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        padding: 8px 16px;
+        background: #FF8C00;
+        border-radius: 18px;
+        display: inline-block;
+      }
+    }
+    .control-right{
+      display: inline-block;
+      width: 75px;
+      text-align: right;
+      img{
+        width: 32px;
+        &.m-r{
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

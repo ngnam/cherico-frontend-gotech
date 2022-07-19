@@ -1,0 +1,54 @@
+:local(.class) {
+  .content{
+    position: relative;
+    textarea, input{
+      width: 100%;
+      border: 1px solid #C2C2C2;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 16px;
+      &.no-border{
+        border: none;
+        border-bottom: 1px solid #C2C2C2;
+        border-radius: 0;
+      }
+    }
+    &.money:after{
+      content: '¥';
+      position: absolute;
+      left: 2px;
+      bottom: 16px;
+    }
+  }
+  .label{
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #575757;
+    margin-top: 0;
+    margin-bottom: 8px;
+    span{
+      position: absolute;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 19px;
+      right: 0;
+      top: 8px;
+      color: #FF3C00;
+    }
+  }
+  .helper-text{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    color: #575757;
+  }
+  .error-text{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FF3C00;
+  }
+}

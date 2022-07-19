@@ -1,0 +1,68 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+
+  > .page-content {
+    padding: 0 16px;
+    margin-bottom: 40px;
+
+    button {
+      width: 200px;
+      padding: 12px 0;
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .textarea {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid $glay-300;
+      border-radius: 4px;
+    }
+
+    .message-confirm {
+      padding: 16px 0;
+      color: $glay-900;
+      white-space: pre-wrap;
+      border-top: 1px solid $glay-50;
+      border-bottom: 1px solid $glay-50;
+    }
+
+    .mail-confirm {
+      padding-bottom: 20px;
+      color: $glay-900;
+      border-bottom: 1px solid $glay-50;
+    }
+
+    .text {
+      color: $brand-core-orange;
+    }
+
+    .area-sent {
+      margin-top: 110px;
+    }
+
+    .title-sent {
+      font-size: 17px;
+      color: $glay-900;
+      text-align: center;
+    }
+
+    .message-sent {
+      font-size: 13px;
+      color: $glay-900;
+    }
+
+    .actions {
+      margin-top: 32px;
+      text-align: center;
+    }
+  }
+}

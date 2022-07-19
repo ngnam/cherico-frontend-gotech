@@ -1,0 +1,89 @@
+@import "common.scss";
+
+:local(.class) {
+  .btn-loadmore {
+    text-align: center;
+    padding: 10px;
+
+    button {
+      border: 0;
+    }
+
+    &:focus {
+      border: 0;
+    }
+  }
+
+
+
+  .comment-item {
+    padding: 8px 16px ;
+    border-bottom: 1px solid $glay-50;
+
+    &.my-comment {
+      background-color: #FAF4F1;
+    }
+
+    &.hide-comment {
+      &:nth-child(n+4) {
+        display: none !important;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+
+
+    .avatar {
+      flex-shrink: 0;
+
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+
+    .comment-content {
+      margin-left: 8px;
+      width: calc(100% - 60px);
+
+      .text {
+        font-size: 13px;
+        line-height: 18px;
+        word-break: break-all;
+      }
+
+      .info {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #7B7B7B;
+
+        a {
+          color: #7B7B7B;
+        }
+
+        .timestamp {
+          margin-left: 8px;
+        }
+      }
+
+      .delete-comment {
+        text-align: right;
+
+        .btn-delete-comment {
+          color: #0072FF;
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+
+}

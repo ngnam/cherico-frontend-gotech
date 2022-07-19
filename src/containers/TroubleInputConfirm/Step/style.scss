@@ -1,0 +1,57 @@
+@import "common.scss";
+
+:local(.class) {
+  .step-item{
+    margin-bottom: 15px;
+    .text-title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: #575757;
+    }
+    img{
+      width: 100%;
+    }
+    .text-description{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .text-comment{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-decoration-line: underline;
+      color: #7B7B7B;
+      text-align: right;
+      img{
+        width: 13px;
+        margin-right: 5px;
+      }
+    }
+
+    .img-content{
+      text-align: center;
+      img{
+        width: 75%;
+      }
+    }
+    .advice-title{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 0;
+    }
+    .advice-description{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 18px;
+      margin-top: 5px;
+    }
+  }
+}

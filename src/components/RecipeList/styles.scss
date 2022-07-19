@@ -1,0 +1,34 @@
+@import "common.scss";
+
+:local(.class) {
+  margin-top: 10px;
+
+
+  >ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+
+    .comment-box {
+      width: 96%;
+      margin-left: 16px;
+      display: flex;
+      margin-top: -20px;
+      margin-bottom: 28px;
+
+
+    }
+
+    .mb-39 {
+      margin-bottom: 39px;
+    }
+
+  }
+
+  .action {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

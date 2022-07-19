@@ -1,0 +1,16 @@
+@import "common.scss";
+
+:local(.class) {
+  .content-container {
+    padding: 0 16px;
+
+    .container {
+      margin-top: 32px;
+    }
+  }
+
+  .body {
+    position: relative;
+    padding: 16px;
+  }
+}

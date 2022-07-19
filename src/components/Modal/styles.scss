@@ -1,0 +1,52 @@
+@import "common.scss";
+
+:local(.class) {
+  position: absolute;
+  z-index: 999;
+
+  .popup-box {
+    position: fixed;
+    bottom: 0;
+    width: 96%;
+    max-width: 730px;
+    margin: 0 2%;
+    background: transparent;
+    pointer-events: auto;
+
+    .box-action, .box-close {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border-radius: 12px;
+      text-align: center;
+      overflow: auto;
+      .button {
+        padding: 16px 0;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #0777E9;
+      }
+      .button-delete{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        color: #E9504F;
+      }
+      .border-top{
+        border-bottom: 0.5px solid #C6C6C8;
+      }
+    }
+    .box-close{
+      margin-top: 8px;
+      margin-bottom: 28px;
+      .button {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 28px;
+        color: #3674E0;
+      }
+    }
+  }
+}

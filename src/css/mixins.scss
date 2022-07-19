@@ -1,0 +1,61 @@
+@mixin clearfix {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin image-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+@mixin image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$small-mobile-width: 375px;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+
+@mixin small-mobile {
+  @media (max-width: #{$small-mobile-width - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin mobile {
+  @media (min-width: #{$small-mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

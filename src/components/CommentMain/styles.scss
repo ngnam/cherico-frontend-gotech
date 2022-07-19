@@ -1,0 +1,196 @@
+@import "common.scss";
+
+:local(.class).session-comment-item {
+
+    flex: 1 0;
+    margin: 8px 0 0px 0;
+    padding: 16px;
+    border: 1px solid #FFC900;
+    border-radius: 8px;
+    position: relative;
+
+
+    &.ml-9 {
+        margin-left: 9px;
+    }
+
+
+    &.arrow-box {
+        color: #FFC900;
+        position: relative;
+    }
+
+
+    /* speech bubble 10 */
+
+    &.arrow-box:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid #FFC900;
+        left: 75%;
+        top: -20px;
+    }
+
+    &.arrow-box:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 75%;
+        top: -18px;
+    }
+
+    &.arrow-up-center:before {
+        left: 50%;
+    }
+
+    &.arrow-up-center:after {
+        left: 50%;
+    }
+
+    &.arrow-up-right:before {
+        left: 75%;
+    }
+
+    &.arrow-up-right:after {
+        left: 75%;
+    }
+
+    &.arrow-up-left:before {
+        left: 25%;
+    }
+
+    &.arrow-up-left:after {
+        left: 25%;
+    }
+
+
+    &.hide-comment {
+        &:nth-child(n+4) {
+            display: none !important;
+        }
+    }
+
+    &:last-child {
+        // border-bottom: none;
+    }
+
+
+    .comment-link {
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .avatar {
+            .comment_count {
+                position: relative;
+                top: -7px;
+                left: 5px;
+
+                a {
+                    color: #FF8C00;
+                    text-decoration: none;
+                }
+
+                i {
+                    font-style: inherit;
+                    text-decoration: underline;
+                    font-family: Noto Sans;
+                    color: #7B7B7B;
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                height: 24px;
+                width: 24px;
+                border: 1px solid #FFFFFF;
+                margin-left: -6px;
+
+                &:nth-child(1) {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+    .avatar {
+        flex-shrink: 0;
+
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+    }
+
+    .comment-content {
+        margin-left: 8px;
+        // width: calc(100% - 60px);
+
+
+
+        .new-lable {
+            width: 60px;
+            height: 14px;
+            background: #FFC900;
+            border-radius: 4px;
+            padding: 1px 4px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 14px;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+
+        .text {
+            font-size: 13px;
+            line-height: 18px;
+            word-break: break-all;
+            font-style: normal;
+            font-weight: normal;
+            color: #575757;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .info {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 19px;
+            color: #7B7B7B;
+
+            a {
+                color: #7B7B7B;
+            }
+
+            .timestamp {
+                margin-left: 8px;
+            }
+        }
+
+        .delete-comment {
+            text-align: right;
+
+            .btn-delete-comment {
+                color: #0072FF;
+                text-decoration: underline;
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}

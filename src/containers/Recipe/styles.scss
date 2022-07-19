@@ -1,0 +1,395 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+
+  section.image {
+    padding: 16px 0;
+  }
+
+  .btn-view-detail {
+    padding: 12px 48px;
+    font-size: 13px;
+    line-height: 19px;
+    width: 199px;
+  }
+
+  .content-box {
+    padding: 8px 16px;
+    padding-bottom: 0px;
+
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: $glay-800;
+      white-space: pre-wrap;
+
+      a.count {
+        color: #FF8C00;
+        text-decoration: none;
+      }
+    }
+
+    .title-time-price {
+      font-size: 14px;
+      font-weight: bold;
+      color: #575757;
+      line-height: 19px;
+
+      svg {
+        margin-right: 4px;
+        vertical-align: text-bottom;
+
+        &:nth-child(2) {
+          margin-left: 24px;
+        }
+      }
+    }
+
+    .category-box {
+      padding-left: 8px;
+      margin-top: 16px;
+      margin-bottom: 52px;
+      border-left: 2px solid $brand-core-orange;
+
+      a {
+        word-wrap: break-word;
+      }
+    }
+
+    .body-text {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    &.border {
+      border-bottom: 1px solid $glay-50;
+    }
+
+    .heading {
+      padding-top: 40px;
+      padding-bottom: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+      border-bottom: 1px solid $glay-800;
+      word-break: break-all;
+    }
+
+    .sub {
+      margin-top: 24px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      word-break: break-all;
+    }
+
+    .description {
+      white-space: pre-wrap;
+      word-break: break-all;
+
+      a {
+        color: $glay-800;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .image {
+    .image-container {
+      @include image-container;
+
+      padding-bottom: 75%;
+
+      >img {
+        @include image;
+      }
+    }
+  }
+
+  .kv {
+    position: relative;
+  }
+
+  .title {
+    position: relative;
+    padding-bottom: 0;
+
+    .text-container {
+      .text {
+        flex-grow: 0.8;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        color: $glay-800;
+      }
+
+      .updated-at {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        color: $glay-600;
+      }
+
+      .favorite-action {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .intro {
+    .intro-text {
+      margin-top: 12px;
+    }
+  }
+
+  .reference-media {
+    position: relative;
+    padding: 16px 0 0 16px;
+
+    .image-container {
+      img {
+        max-width: 200px;
+      }
+    }
+
+    a {
+      color: $glay-800;
+      text-decoration: none;
+    }
+  }
+
+  // .material {
+  // }
+
+  .info {
+    .info-list {
+      margin-top: 16px;
+
+      .item {
+        padding: 16px 0;
+        border-bottom: 1px solid $glay-50;
+
+        &:first-child {
+          border-top: 1px solid $glay-50;
+        }
+
+        .item-text {
+          font-size: 13px;
+          line-height: 18px;
+        }
+
+        .item-price {
+          font-size: 13px;
+          line-height: 18px;
+        }
+
+        .count {
+          .text-input {
+            margin-top: 4px;
+
+            input {
+              font-size: 11px;
+              line-height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .description {
+    .description-title {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 18px;
+      white-space: pre-wrap;
+    }
+
+    .description-body {
+      margin: 8px 0;
+      font-size: 13px;
+      line-height: 18px;
+      word-break: break-all;
+      white-space: pre-wrap;
+    }
+  }
+
+  .complete {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fff;
+    background-color: $brand-core-orange;
+  }
+
+  .feedback {
+    .body {
+      margin-top: 16px;
+      word-break: break-all;
+    }
+  }
+
+  .solution-comments {
+
+    .count {
+
+      &,
+      * {
+        font-size: 14px;
+        line-height: 19px;
+        color: $glay-600;
+      }
+
+      a {
+        color: #FF8C00;
+      }
+    }
+  }
+
+  .comments {
+    // .comment-list {
+    // }
+
+    .comment-actions {
+      margin: 16px 0 36px;
+
+      button {
+        width: 240px;
+        height: 44px;
+      }
+    }
+  }
+
+  .index {
+    .index-list {
+      padding: 20px 16px;
+      list-style-type: none;
+      background-color: $ui-color-noti-base;
+      border-radius: 8px;
+
+      .index-item {
+        margin-top: 16px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .link {
+          font-size: 13px;
+          line-height: 19px;
+          color: $glay-800;
+        }
+      }
+    }
+  }
+
+  .related-posts {
+    .post-list {
+      .post-item {
+        margin-top: 16px;
+
+        .link {
+          color: $glay-800;
+        }
+      }
+    }
+  }
+
+  .comment-box-wrap {
+    margin-top: 50px;
+  }
+
+
+  .session-comment-item {
+    margin: 25px 0 8px 0;
+    padding: 16px;
+    border-bottom: 1px solid $glay-50;
+    border-radius: 8px;
+
+
+    &.my-comment {
+      background-color: #FAF4F1;
+    }
+
+    &.hide-comment {
+      &:nth-child(n+4) {
+        display: none !important;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+
+
+    .avatar {
+      flex-shrink: 0;
+
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    }
+
+    .comment-content {
+      margin-left: 8px;
+      width: calc(100% - 60px);
+
+      .new-lable {
+        width: 60px;
+        height: 14px;
+        background: #FFC900;
+        border-radius: 4px;
+        padding: 1px 4px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 14px;
+        color: #FFFFFF;
+      }
+
+      .text {
+        font-size: 13px;
+        line-height: 18px;
+        word-break: break-all;
+        font-style: normal;
+        font-weight: normal;
+        color: #575757;
+      }
+
+      .info {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 19px;
+        color: #7B7B7B;
+
+        a {
+          color: #7B7B7B;
+        }
+
+        .timestamp {
+          margin-left: 8px;
+        }
+      }
+
+      .delete-comment {
+        text-align: right;
+
+        .btn-delete-comment {
+          color: #0072FF;
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+
+  // .related-recipes {
+  // }
+}

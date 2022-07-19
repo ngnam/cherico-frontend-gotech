@@ -1,0 +1,14 @@
+@import "common.scss";
+
+:local(.class) {
+  display: inline-flex;
+  align-items: center;
+
+  .time-ago-text {
+    margin-left: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    color: $glay-800;
+  }
+}

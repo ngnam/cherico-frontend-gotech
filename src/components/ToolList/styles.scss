@@ -1,0 +1,50 @@
+:local(.class) {
+  .main-title-block{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #575757;
+    margin-bottom: 8px;
+    margin-top: 52px;
+  }
+  .section-content-block{
+    padding: 16px;
+    border: 1px solid #C2C2C2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-bottom: 48px;
+    .text-title{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      color: #575757;
+      margin: 8px 0;
+    }
+  }
+  .section-control{
+    text-align: center;
+    margin-top: 16px;
+    .btn-remove{
+      background: white;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      color: #7B7B7B;
+      padding: 8px 16px;
+      border: 1px solid #7B7B7B;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .btn-add{
+      background: #FF8C00;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFFFFF;
+      padding: 8px 16px;
+      display: inline-block;
+    }
+  }
+}

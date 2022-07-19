@@ -1,0 +1,8 @@
+@import "common.scss";
+
+:local(.class) {
+  padding: 12px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 2px solid rgba(51, 51, 51, 0.1);
+}

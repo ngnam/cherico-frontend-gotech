@@ -1,0 +1,186 @@
+@import "common.scss";
+
+:local(.class) {
+  .p-5{
+    padding: 0 8px;
+  }
+  .color-orange{
+    color: #FF8C00;
+  }
+  .step-content{
+    margin-bottom: 36px;
+    .main-content{
+      background: #FFFFFF;
+      border: 1px solid #8B8B8B;
+      border-radius: 8px;
+      padding: 24px 16px 20px;
+      .main-title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #575757;
+        margin: 0;
+      }
+      .main-img{
+        margin-top: 16px;
+        width: 100%;
+      }
+      .main-sub-title{
+        font-size: 14px;
+        line-height: 19px;
+        color: #7B7B7B;
+        margin: 0;
+        padding-top: 4px;
+      }
+    }
+    .comment-content-normal{
+      font-size: 0;
+      margin-top: 8px;
+      .count-comment{
+        display: inline-block;
+        width: 35%;
+        font-size: 14px;
+        line-height: 19px;
+        color: #7B7B7B;
+      }
+      .link-comment{
+        display: inline-block;
+        width: 65%;
+        text-align: right;
+      }
+    }
+    .comment-content-abnormal{
+      background: #FAF4F1;
+      border-radius: 8px;
+      border: 1px solid #FF8C00;
+      padding: 16px;
+      margin-top: 14px;
+      position: relative;
+      &::before{
+        border-top: 1px solid #FF8C00;
+        border-left: 1px solid #FF8C00;
+        position: absolute;
+        left: 50%;
+        background: #FAF4F1;
+        content: '';
+        width: 9px;
+        height: 9px;
+        transform: rotate(45deg);
+        top: -6px;
+      }
+      .ab-comment{
+        font-size: 0;
+        .bl-1{
+          display: inline-block;
+          vertical-align: top;
+          width: 48px;
+          img{
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .bl-2{
+          display: inline-block;
+          vertical-align: top;
+          width: calc(100% - 68px);
+          .popular-flag{
+            background-color: #FFC900;
+            border-radius: 4px;
+            font-size: 10px;
+            line-height: 14px;
+            color: #FFFFFF;
+            padding: 1px 4px;
+          }
+          .comment-text{
+            font-size: 13px;
+            line-height: 18px;
+            color: #575757;
+            margin: 0;
+          }
+          .comment-date{
+            font-size: 13px;
+            line-height: 19px;
+            color: #7B7B7B;
+          }
+        }
+        .bl-3{
+          display: inline-block;
+          vertical-align: top;
+          width: 20px;
+          text-align: center;
+          img{
+            width: 16px;
+          }
+          .count-heart{
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 14px;
+            color: #333333;
+            margin: 0;
+          }
+        }
+      }
+      .ab-info{
+        font-size: 0;
+        .in-1{
+          display: inline-block;
+          width: calc(100% - 150px);
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          color: #7B7B7B;
+        }
+        .in-2{
+          display: inline-block;
+          width: 150px;
+          text-align: right;
+        }
+      }
+    }
+    .text-point{
+      margin: 0;
+      padding-top: 16px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+      color: #0072FF;
+    }
+    .advice-collapse{
+      position: relative;
+      padding: 16px;
+      border-radius: 8px;
+      background-color: #F5F5F5;
+      .col-title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #575757;
+        margin: 0;
+      }
+      .col-img{
+        margin-top: 16px;
+        width: 100%;
+      }
+      .col-sub-title{
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #575757;
+      }
+      .icon-control{
+        position: absolute;
+        top: 13px;
+        right: 16px;
+        height: 28px;
+      }
+      &.close{
+        height: 21px;
+        overflow: hidden;
+        .col-title{
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "common.scss";
+
+:local(.class) {
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+  }
+
+  .recipe-list {
+    margin-top: 10px;
+
+    > ul {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      list-style-type: none;
+
+      .recipe-item {
+        display: flex;
+        margin-left: 16px;
+
+        &:nth-child(11n + 3),
+        &:nth-child(11n + 5),
+        &:nth-child(11n + 7),
+        &:nth-child(11n + 9),
+        &:nth-child(11n + 11) {
+          margin-left: 8px;
+        }
+
+        &:nth-child(11n + 1) {
+          flex: 0 0;
+          flex-basis: calc(100% - 40px - -16px / 2 - 0.01px);
+          max-width: calc(100% - 40px - -16px / 2 - 0.01px);
+          margin-left: 16px;
+        }
+
+        &:not(:nth-child(11n + 1)) {
+          flex: 0 1;
+          flex-basis: calc(100% / 2 - 40px - -40px / 2 - 0.01px);
+          max-width: calc(100% / 2 - 40px - -40px / 2 - 0.01px);
+        }
+      }
+    }
+  }
+}

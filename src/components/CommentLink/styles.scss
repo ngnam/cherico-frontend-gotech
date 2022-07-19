@@ -1,0 +1,34 @@
+@import "common.scss";
+
+:local(.class) {
+  a {
+    margin-left: 4px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $glay-500;
+  }
+
+
+
+  svg {
+    path {
+      fill: #FF8C00
+    }
+  }
+
+  .common-link {
+    text-decoration: none;
+
+    svg {
+      path {
+        fill: #040000;
+      }
+    }
+  }
+
+  .adjust-position{
+    position: relative;
+    top: 1.35px;
+  }
+
+}

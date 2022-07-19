@@ -1,0 +1,23 @@
+@import "common.scss";
+
+:local(.class) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px 8px 0;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  color: $glay-800;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+
+  &:disabled {
+    opacity: 0.7;
+  }
+
+  > span {
+    margin-right: 4px;
+  }
+}

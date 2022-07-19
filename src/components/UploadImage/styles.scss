@@ -1,0 +1,63 @@
+:local(.class) {
+  .upload-img-box-content{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    &:before{
+      content: '';
+      padding-top: 75%;
+      background: rgba(51, 51, 51, 0.05);
+      display: block;
+    }
+    .no-image{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .full{
+        width: 26px;
+        margin-bottom: 11px;
+      }
+      .simple{
+        width: 45px;
+      }
+      p{
+        font-size: 13px;
+        line-height: 20px;
+        color: #7B7B7B;
+        margin: 0;
+        min-width: 215px;
+      }
+      span{
+        display: inline-block;
+        background: #0072FF;
+        border-radius: 18px;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 10px;
+        padding: 8px;
+      }
+    }
+    .have-image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      img{
+        position: relative;
+        max-height: 100%;
+        max-width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .class-hidden{
+    display: none;
+  }
+}

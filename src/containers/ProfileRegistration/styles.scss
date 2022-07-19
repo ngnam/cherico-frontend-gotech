@@ -1,0 +1,99 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+
+  > .page-content {
+    padding: 0 16px;
+
+    button {
+      width: 200px;
+      padding: 12px 0;
+    }
+
+    .heading {
+      margin-top: 16px;
+      margin-bottom: 20px;
+
+      .title {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .message {
+        margin: 12px 0 0;
+        font-size: 13px;
+      }
+    }
+
+    .info-form {
+      .photo-input {
+        margin-bottom: 32px;
+        text-align: center;
+
+        .photo {
+          display: flex;
+          justify-content: center;
+
+          .image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background-color: $glay-100-alpha;
+            border-radius: 50%;
+
+            svg path {
+              fill: #b2b2b2;
+            }
+
+            .profile-image {
+              width: 80px;
+              height: 80px;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        .upload {
+          margin-top: 20px;
+
+          .text {
+            font-size: 11px;
+            text-decoration: underline;
+
+            input[type="file"] {
+              display: none;
+              appearance: none;
+            }
+          }
+        }
+      }
+    }
+
+    .actions {
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .title-complete {
+      font-size: 22px;
+      line-height: 30px;
+      color: $glay-900;
+      text-align: center;
+    }
+
+    .message-complete {
+      font-size: 13px;
+      line-height: 18px;
+      color: $glay-900;
+      text-align: center;
+    }
+
+    .error-text {
+      font-size: 10px;
+      color: $ui-color-cotion;
+    }
+  }
+}

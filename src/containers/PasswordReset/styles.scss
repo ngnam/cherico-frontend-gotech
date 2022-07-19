@@ -1,0 +1,46 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+
+  > .page-content {
+    padding: 0 16px;
+
+    button {
+      width: 200px;
+      padding: 12px 0;
+    }
+
+    .heading {
+      margin-top: 16px;
+      margin-bottom: 20px;
+
+      .title {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .message {
+        margin: 12px 0 0;
+        font-size: 13px;
+      }
+    }
+
+    .reset {
+      text-align: center;
+
+      .title {
+        font-size: 22px;
+      }
+    }
+
+    // .info-form {
+
+    // }
+
+    .actions {
+      margin-top: 32px;
+      text-align: center;
+    }
+  }
+}

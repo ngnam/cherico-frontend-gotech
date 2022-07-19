@@ -1,0 +1,62 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+  padding: 16px;
+  background-color: $ui-color-noti-base;
+  border-radius: 8px;
+
+  .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  .input-field {
+    margin-top: 16px;
+
+    input {
+      background-color: transparent;
+    }
+  }
+
+  .photo {
+    border-radius: 8px;
+
+    .photo-placeholder {
+      width: 9em;
+      max-height: 150px;
+      overflow: hidden;
+      margin: 0 auto;
+      background-color: $white;
+      border-radius: 8px;
+      min-height: 86px;
+      img{
+        width: 100%;
+      }
+
+      svg {
+        width: 26px;
+        height: 24px;
+        fill: $glay-500;
+      }
+    }
+
+    .add-photo-link {
+      margin-top: 4px;
+    }
+  }
+
+  .description {
+    margin-top: 16px;
+
+    textarea {
+      height: 80px;
+    }
+  }
+}

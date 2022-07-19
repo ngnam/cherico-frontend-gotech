@@ -1,0 +1,24 @@
+@import "common.scss";
+
+:local(.class) {
+  .body {
+    position: relative;
+    padding: 16px;
+  }
+
+  .new-recipe-list {
+    padding: 16px;
+  }
+
+  .category-list {
+    padding: 16px;
+  }
+
+  .follow-user-recipe {
+    padding: 16px;
+  }
+
+  .recommend-user-list {
+    padding: 16px;
+  }
+}

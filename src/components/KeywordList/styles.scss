@@ -1,0 +1,19 @@
+@import "common.scss";
+
+:local(.class) {
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  padding-bottom: 24px;
+
+  .keyword-item {
+    padding: 4px 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    white-space: nowrap;
+    border: 1px solid $glay-100;
+    border-radius: 4px;
+  }
+}

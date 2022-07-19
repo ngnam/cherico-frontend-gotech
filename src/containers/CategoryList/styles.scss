@@ -1,0 +1,77 @@
+@import "common.scss";
+
+:local(.class) {
+  .sub-categories {
+    width: 100%;
+    margin-top: 10px;
+
+    .sub-category {
+      display: inline-flex;
+      flex-direction: column;
+      width: 100%;
+
+      .category-heading {
+        display: flex;
+        align-items: center;
+
+        .category-title {
+          margin-left: 16px;
+          font-size: 17px;
+          font-weight: 700;
+          line-height: 26px;
+        }
+      }
+
+      .category-links {
+        width: 100%;
+        padding-left: 20px;
+        margin-top: 0;
+        list-style-type: none;
+
+        .link {
+          width: 100%;
+          // margin-bottom: 24px;
+          padding: 16px 0;
+          border-bottom: 1px solid $glay-50;
+
+          a {
+            font-size: 12px;
+            color: $glay-900;
+            text-decoration: none;
+          }
+
+          &.read-more {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            list-style-type: none;
+
+            a {
+              font-size: 14px;
+              color: $brand-core-green;
+
+              > span {
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .actions {
+        text-align: right;
+
+        button {
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 18px;
+          color: #7b7b7b;
+
+          > span {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}

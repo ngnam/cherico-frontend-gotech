@@ -1,0 +1,153 @@
+@import "common.scss";
+
+:local(.class) {
+  >article {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  &:first-child {
+    >article {
+      // margin-top: 28px;
+    }
+  }
+
+  .contents-image {
+    flex-shrink: 0;
+    width: 109px;
+    height: 82px;
+    word-break: break-all;
+    background-color: #c4c4c4;
+    border-radius: 8px;
+
+    >img {
+      width: 109px;
+      height: 82px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  .link {
+    color: $glay-800;
+    text-decoration: none;
+  }
+
+  .contents-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 80px;
+    margin-left: 12px;
+
+    .contents-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2px;
+
+      .caption {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        line-height: 14px;
+        color: #333;
+
+        >img {
+          width: 12px;
+        }
+      }
+
+      .effect {
+        >span {
+          display: inline-flex;
+          align-items: center;
+          margin-right: 12px;
+        }
+
+        .text {
+          margin-left: 4px;
+          font-size: 10px;
+          line-height: 14px;
+          color: #c2c2c2;
+        }
+      }
+    }
+
+    .contents-title {
+      display: -webkit-box;
+      flex-grow: 2;
+      margin: 0;
+      margin-bottom: 8px;
+      overflow: hidden;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #575757;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      word-break: break-all;
+    }
+
+    .effect {
+      display: flex;
+      align-items: center;
+
+      >span {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 12px;
+      }
+
+      .text {
+        margin-left: 4px;
+        font-weight: 600;
+      }
+    }
+
+    .contents-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .user {
+        display: flex;
+        min-width: 0;
+
+        .dummy {
+          width: auto;
+          height: 16px;
+        }
+
+        .thumb {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+        }
+
+        .nickname {
+          flex-grow: 2;
+          margin-left: 5px;
+          overflow: hidden;
+          font-size: 12px;
+          line-height: 17px;
+
+          .text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .updated {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        white-space: nowrap;
+      }
+    }
+  }
+}

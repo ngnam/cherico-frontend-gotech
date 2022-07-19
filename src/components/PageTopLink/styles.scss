@@ -1,0 +1,17 @@
+@import "common.scss";
+
+:local(.class) {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  font-size: 0;
+  cursor: pointer;
+  opacity: 0;
+
+  &.show {
+    font-size: 60px;
+    color: #000;
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+}

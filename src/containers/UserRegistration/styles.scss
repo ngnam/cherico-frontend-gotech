@@ -1,0 +1,70 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+
+  > .page-content {
+    padding: 0 16px;
+
+    .error {
+      .message {
+        font-size: 15px;
+        font-weight: 700;
+        color: $ui-color-cotion;
+      }
+    }
+
+    button {
+      width: 200px;
+      padding: 12px 0;
+    }
+
+    .heading {
+      margin-top: 16px;
+
+      .title {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .message {
+        margin: 12px 0 0;
+        font-size: 13px;
+      }
+    }
+
+    .info-form {
+      margin-top: 20px;
+    }
+    .form-input {
+      margin-bottom: 24px;
+    }
+    .terms {
+      padding-top: 12px;
+      padding-bottom: 6px;
+      .term-container {
+
+        font-size: 13px;
+        font-weight: bold;
+        color: $glay-800;
+        text-align: center;
+
+        .term-link {
+          margin-left: 6px;
+          color: $glay-800;
+        }
+      }
+    }
+
+    .actions {
+      margin-top: 32px;
+      text-align: center;
+      button.default {
+        background: $glay-800;
+        &:disabled {
+          background: $glay-200;
+        }
+      }
+    }
+  }
+}

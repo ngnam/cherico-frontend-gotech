@@ -1,0 +1,88 @@
+@import "common.scss";
+
+:local(.class) {
+  .input-field {
+    margin-top: 16px;
+  }
+
+  input{
+    padding: 0;
+  }
+
+  .photo {
+    margin-top: 16px;
+    border-radius: 8px;
+
+    .photo-placeholder {
+      width: 114px;
+      min-height: 86px;
+      margin: 0 auto;
+      background-color: $glay-50-alpha;
+      img{
+        width: 100%;
+      }
+
+      svg {
+        width: 26px;
+        height: 24px;
+        fill: $glay-500;
+      }
+    }
+
+    .add-photo-link {
+      margin-top: 4px;
+      width: 95px;
+    }
+  }
+
+  .action-link{
+    input{
+      width: 95px;
+    }
+  }
+
+  .actions {
+    button {
+      border-radius: 16px;
+    }
+
+    .add-point {
+      // margin-top: 16px;
+
+      .square {
+        width: 20px;
+        height: 20px;
+        background-color: #c4c4c4;
+      }
+
+      a {
+        margin-left: 4px;
+      }
+    }
+
+    .change-order {
+      button {
+        box-sizing: border-box;
+        padding: 8px;
+        margin: 4px;
+        background-color: $white;
+        border: 1px solid $glay-800;
+        border-radius: 4px;
+      }
+    }
+
+    .buttons {
+      margin-top: 24px;
+
+      .delete-step {
+        color: $glay-900;
+        background-color: $white;
+        border: 1px solid $glay-800;
+      }
+
+      .add-step {
+        margin-left: 8px;
+      }
+    }
+  }
+}

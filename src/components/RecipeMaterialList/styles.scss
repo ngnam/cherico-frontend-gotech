@@ -1,0 +1,37 @@
+@import "common.scss";
+
+:local(.class) {
+  margin-top: 16px;
+
+  .item {
+    padding: 8px 0;
+    border-bottom: 1px solid $glay-50;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .item-text {
+      font-size: 13px;
+      line-height: 18px;
+      color: $glay-800;
+    }
+
+    .item-price {
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .item-qty {
+      font-size: 11px;
+      line-height: 15px;
+      color: $glay-400;
+    }
+
+    .item-price {
+      font-size: 13px;
+      line-height: 18px;
+      color: $glay-800;
+    }
+  }
+}

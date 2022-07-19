@@ -1,0 +1,32 @@
+@import "common.scss";
+
+:local(.class) {
+  position: relative;
+  padding: 16px;
+
+  .heading {
+    text-align: center;
+
+    .title {
+      font-size: 22px;
+    }
+
+    .message {
+      font-size: 13px;
+    }
+  }
+
+  .body {
+    padding: 16px;
+    background-color: #faf4f1;
+    border-radius: 8px;
+
+    .title {
+      font-size: 17px;
+    }
+
+    .message {
+      font-size: 13px;
+    }
+  }
+}

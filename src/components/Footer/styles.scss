@@ -1,0 +1,52 @@
+@import "common.scss";
+
+:local(.class) {
+  padding: 12px 16px;
+  background-color: $glay-50-alpha;
+  opacity: 0.7;
+
+  .row {
+    display: flex;
+
+    .col {
+      display: flex;
+      flex-basis: 50%;
+      flex-direction: column;
+
+      .link {
+        margin: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $glay-800;
+        text-decoration: none;
+
+        >span {
+          display: block;
+          line-height: 0.75rem;
+        }
+      }
+
+      // .sns-list {
+      // }
+
+      // .logo {
+      // }
+
+      &.right {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+      }
+    }
+
+    .sns-list {
+      display: flex;
+      align-items: center;
+
+      .sns {
+        margin-right: 12px;
+      }
+    }
+  }
+}

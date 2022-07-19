@@ -1,0 +1,50 @@
+@import "common.scss";
+
+:local(.class) {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: $white;
+
+  // .logo {
+  // }
+
+  .actions {
+    display: flex;
+    align-items: center;
+
+    .icon-box {
+      margin-right: 12px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .badge {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        min-width: 8px;
+        min-height: 8px;
+        font-size: 5px;
+        line-height: 8px;
+        color: #fff;
+        content: attr(data-badge);
+        background-color: #ff4e00;
+        border: solid 1px #ff4e00;
+        border-radius: 50%;
+      }
+    }
+  }
+}

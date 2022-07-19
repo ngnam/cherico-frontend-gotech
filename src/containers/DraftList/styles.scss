@@ -1,0 +1,78 @@
+@import "common.scss";
+
+:local(.class) {
+  .drafts {
+    padding: 0 16px;
+  }
+
+  .title {
+    margin: 16px 0 16px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .list {
+    margin-bottom: 44px;
+
+    > article {
+      display: flex;
+      margin-bottom: 16px;
+    }
+
+    .image {
+      position: relative;
+      flex-shrink: 0;
+      width: 145px;
+      height: 108px;
+      overflow: hidden;
+      background-color: #c4c4c4;
+      border-radius: 8px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content-link {
+      width: 100%;
+      color: #7b7b7b;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-left: 8px;
+
+      .category {
+        margin: 0;
+
+        .type-icon {
+          height: 16px;
+          margin-right: 4px;
+        }
+
+        .red {
+          color: #ff8c00;
+        }
+      }
+
+      .text {
+        height: 42px;
+        margin: 0 0 20px;
+        overflow: hidden;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .date {
+        font-size: 13px;
+        font-weight: 600;
+        color: #7b7b7b;
+      }
+    }
+  }
+}

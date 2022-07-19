@@ -1,0 +1,63 @@
+@import "common.scss";
+
+:local(.class) {
+  .user-info {
+    .photo {
+      img {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 0 4px $glay-200;
+      }
+
+      .dummy-avatar {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 0 4px $glay-200;
+      }
+    }
+
+    .name {
+      margin-left: 8px;
+    }
+
+    .account-type {
+      margin-left: 8px;
+    }
+
+    .link {
+      color: $glay-800;
+      text-decoration: none;
+    }
+  }
+  .actions{
+    padding-top: 15px;
+  }
+  .introduction{
+    padding-top: 22px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #7B7B7B;
+  }
+  .summary-user-info{
+    border-top: 1px solid #D4D4D4;
+    margin-top: 20px;
+    padding-top: 8px;
+    .summary-title{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      color: #575757;
+      margin: 0;
+    }
+    .summary-description{
+      font-size: 12px;
+      line-height: 17px;
+      color: #575757;
+      margin: 0;
+    }
+  }
+}

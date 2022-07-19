@@ -1,0 +1,20 @@
+@import "common.scss";
+
+:local(.class) {
+  min-width: 84px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FF8C00;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #FF8C00;
+  border-radius: 16px;
+  outline: none;
+  font-family: Roboto;
+  line-height: 18px;
+  &.on {
+    color: #fff;
+    background-color: #FF8C00;
+  }
+}

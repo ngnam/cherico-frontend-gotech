@@ -1,0 +1,28 @@
+@import "common.scss";
+
+:local(.class) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 2px 4px;
+  font-size: 11px;
+  border-radius: 4px;
+
+  &.normal {
+    color: #999;
+    background-color: #fff;
+    border: solid 1px #999;
+  }
+
+  &.certification {
+    color: #fff;
+    background-color: #ff8c00;
+    border: solid 1px #ff8c00;
+  }
+
+  &.offical {
+    color: #fff;
+    background-color: #32cd32;
+    border: solid 1px #32cd32;
+  }
+}
